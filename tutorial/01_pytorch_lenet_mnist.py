@@ -69,7 +69,7 @@ optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 
 # train loop on epoch
-def train(model, dataloader, criterion, optimizer, device=device):
+def train_epoch(model, dataloader, criterion, optimizer, device=device):
     avg_loss = 0  # calculate average loss
     avg_accuracy = 0  # calculate average accuracy
 
@@ -101,8 +101,8 @@ def train(model, dataloader, criterion, optimizer, device=device):
     return avg_loss, avg_accuracy
 
 
-# validation loop
-def validate(model, dataloader, criterion, device=device):
+# validation loop on epoch
+def validate_epoch(model, dataloader, criterion, device=device):
     avg_loss = 0  # calculate average loss
     avg_accuracy = 0  # calculate average accuracy
 
@@ -131,10 +131,10 @@ def validate(model, dataloader, criterion, device=device):
 # train / validation loop
 for epoch in range(N_EPOCHS):
     # train
-    train_loss, train_accuracy = train(model, trainloader, criterion, optimizer, device=device)
+    train_loss, train_accuracy = train_epoch(model, trainloader, criterion, optimizer, device=device)
 
     # validate
-    val_loss, val_accuracy = validate(model, testloader, criterion, device=device)
+    val_loss, val_accuracy = validate_epoch(model, testloader, criterion, device=device)
 
     # display
     print(f'epoch [{epoch+1}/{N_EPOCHS}]')
