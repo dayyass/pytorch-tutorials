@@ -20,3 +20,13 @@ Different Deep Learning tasks solved using PyTorch models.
 #### Generative Models:
 - [ ] Variational Autoencoder (VAE)
 - [ ] Generative Adversarial Network (GAN)
+
+### Getting Started
+```
+# clone repo   
+git clone https://github.com/dayyass/pytorch_tutorials.git
+
+# install dependencies   
+cd pytorch_tutorials
+pip install -r requirements.txt
+```
