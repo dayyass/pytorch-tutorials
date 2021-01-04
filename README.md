@@ -1,2 +1,2 @@
 # pytorch_tutorial
-Different deep learning tasks solved by pytorch models
+Different Deep Learning tasks solved using PyTorch models.
