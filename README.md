@@ -12,6 +12,8 @@ Different Deep Learning tasks solved using PyTorch models.
 - [x] [Sequence Labeling](https://github.com/dayyass/pytorch_ner)
 - [x] [Language Modeling](https://github.com/dayyass/language_modeling)
 - [x] [Machine Translation](https://github.com/dayyass/neural_machine_translation)
+- [ ] Topic Modeling
+- [ ] Text Summarization
 #### Reinforcement Learning
 - [ ] Deep Q-Network (DQN)
 - [ ] Rainbow
