@@ -6,6 +6,7 @@ Different Deep Learning tasks solved using PyTorch models.
 - [x] [Image Classification](tutorials/01_pytorch_lenet_mnist.py)
 - [ ] Semantic Segmentation
 - [ ] Object Detection
+- [x] [Image Captioning](https://github.com/dayyass/image_captioning)
 #### Natural Language Processing
 - [ ] Word Embeddings
 - [ ] Sequence Classification
