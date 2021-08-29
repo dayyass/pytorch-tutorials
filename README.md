@@ -10,7 +10,7 @@ Different Deep Learning tasks solved using PyTorch models.
 - [x] [Image Captioning](https://github.com/dayyass/image_captioning)
 #### Natural Language Processing
 - [ ] Word Embeddings
-- [ ] Sequence Classification
+- [x] [Text Classification](https://github.com/dayyass/text-classification-baseline)
 - [x] [Sequence Labeling](https://github.com/dayyass/pytorch_ner)
 - [x] [Language Modeling](https://github.com/dayyass/language_modeling)
 - [x] [Machine Translation](https://github.com/dayyass/neural_machine_translation)
