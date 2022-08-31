@@ -4,7 +4,6 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
-import torchvision
 from torchvision.datasets import MNIST
 import torchvision.transforms as transforms
 
@@ -14,6 +13,12 @@ PATH_TO_SAVE_MODEL = './lenet.pth'
 N_EPOCHS = 10
 BATCH_SIZE = 64
 LEARNING_RATE = 1e-3
+
+# reproducibility
+torch.manual_seed(SEED)
+torch.cuda.manual_seed_all(SEED)
+torch.backends.cudnn.benchmark = False
+torch.backends.cudnn.deterministic = True
 
 # use cuda if possible
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
